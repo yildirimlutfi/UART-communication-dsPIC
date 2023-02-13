@@ -1,0 +1,16 @@
+main
+	uartInitArduino
+		UART1_Init
+			Get_Fosc_kHz
+			Get_Fosc_Per_Cyc
+			Delay_100ms
+			_Multiply_32x32
+			_Modulus_32x32
+			_Divide_32x32
+		UART_Set_Active
+	uartTxToArduino
+		UART1_Write
+UART1RXInterrupt
+	UART1_Data_Ready
+	UART1_Read
+Timer1Interrupt
